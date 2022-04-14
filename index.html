@@ -1,12 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>My name is Andrew Wilsher!</h1>
-</body>
+<!-- Currently 30 mins into the HTML crash course -->
+<html>
+  <head>
+    <title>HTML Cheat Sheet</title>
+  </head>
+
+  <body>
+      <a href="blog.html">Go to blog</a>
+      <hr>
+      <!-- Headings -->
+      <h1>Heading One</h1>
+      <h2>Heading Two</h2>
+      <h3>Heading Three</h3>
+      <h4>Heading Four</h4>
+      <h5>Heading Five</h5>
+      <h6>Heading Six</h6>
+
+      <!-- Paragraph -->
+      <p>
+          Lorem ipsum <strong>dolor sit</strong> amet consectetur adipisicing elit. Vel, quibusdam! Fugit tempora, temporibus culpa velit soluta deserunt rem, ex nesciunt placeat quasi qui. Assumenda voluptatem voluptates deserunt sed repellat fugit?
+      </p>
+      <p>
+          Lorem ipsum <em>dolor sit amet consectetur</em> <a href="https://google.ca/" target="_blank">adipisicing elit.</a> Ut, quos.
+      </p>
+
+      <!-- Can use "lorem" for full example text
+    or you can add a number right beside it like "lorem10"
+to depict how many words are added-->
+
+      <!-- Lists -->
+      <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+      </ul>
+
+      <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ol>
+
+    <!-- Table - You do not want to use tables for layout, only use them
+    for  tabular data only. You want to us CSS for your layout -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Andrew Wilsher</td>
+              <td>wilsherandrew@gmail.com</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td>Example Two</td>
+              <td>ex.two@gmail.com</td>
+              <td>36</td>
+            </tr>
+            <tr>
+              <td>Example Three</td>
+              <td>example.3@gmail.com</td>
+              <td>42</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Forms -->
+    <form action="_blank">
+      <div>
+        <label>First Name</label>
+        <input type="text" name="firstName"
+        placeholder="Enter first name"><!-- Doesn't make a difference for what you put in the name section -->
+      </div>
+      <br><!-- would normally use CSS to put space between things -->
+      <div>
+        <label>Last Name</label>
+        <input type="text" name="lastName">
+      </div>
+      <br>
+      <div>
+        <label>Email</label>
+        <input type="email" name="email">
+      </div>
+      <br>
+      <div>
+        <label>Message</label>
+        <textarea name="message"></textarea>
+      </div>
+      <br>
+      <div>
+        <label>Gender</label>
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label>Age:</label>
+        <input type="number" name="age" value="30">
+      </div>
+      <br>
+      <div>
+        <label>Birthday:</label>
+        <input type="date" name="birthday">
+      </div>
+      <br>
+      <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <!-- Button -->
+    <button>Click Me</button>
+
+    <!-- Image -->
+    <br>
+    <a href="images/sample.png">
+      <img src="images/sample.png" alt="Random image of cat" width="200"
+      height="50"><!-- remove height or width to allow for auto -->
+    </a>
+    <!-- Normally you would use CSS to adjust the size of images
+    but you can use HTML technically (like the example above) -->
+
+    <!-- Quotations-->
+      <blockquote cite="https://gmail.com">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus, provident, praesentium repellendus ex laboriosam dolorem quam, libero facilis iusto ea veniam. Nisi quia unde natus, numquam consequuntur molestias officia.
+      </blockquote>
+
+      <p>Frontend development <abbr title="For The Win">FTW</abbr>!</p>
+
+      <p><cite>Website test</cite> by Andrew Wilsher</p>
+
+    <div style="margin-top:500px"></div><!-- ^ this is only for ease of viewing for the course at the moment --> 
+  </body>  
 </html>
+<!--Can use CTRL+U to open a separate tab
+that shows what your html code looks like.
+
+It looks like using the "<b>" tags aren't recommended anymore for some reason -->
